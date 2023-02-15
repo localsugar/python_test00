@@ -1,3 +1,4 @@
+#%%
 import pandas as pd
 import pandas_datareader as web
 
@@ -11,3 +12,4 @@ ticker_data
 ticker_data.columns
 ticker_info = ticker_data[['epsForward','epsTrailingTwelveMonths','averageAnalystRating']].sort_values(by='epsForward', ascending=False)#FalseをTrueに変更すると小さい順に並ぶ
 ticker_info
+# %%
